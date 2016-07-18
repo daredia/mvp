@@ -1,0 +1,6 @@
+COMPONENTS:
+
+- App
+  - Profile
+  - MessageList
+    - MessageListItem
