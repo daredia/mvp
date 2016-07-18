@@ -1,0 +1,29 @@
+{
+  "name": "grin-der",
+  "version": "0.1.0",
+  "description": "Because every dating app should look like Tinder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daredia/2016-06-mvp.git"
+  },
+  "author": "Shehzad Daredia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daredia/2016-06-mvp/issues"
+  },
+  "homepage": "https://github.com/daredia/2016-06-mvp#readme",
+  "dependencies": {
+    "materialize": "^1.0.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1"
+  }
+}
