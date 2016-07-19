@@ -7,5 +7,5 @@ COMPONENTS:
 
 
 TODO: 
-- set up index.js
+- set up App.jsx
 - include rest of scripts in index.html
