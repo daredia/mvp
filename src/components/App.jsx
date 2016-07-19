@@ -1,5 +1,13 @@
 var App = () => (
-  <h1>This is App.jsx</h1>
+  <div>
+    <h1>This is App.jsx</h1>
+    <div>
+      <Profile />
+    </div>
+    <div>
+      <MessageList />
+    </div>
+  </div>
 );
 
 
