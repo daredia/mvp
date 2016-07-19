@@ -7,4 +7,4 @@ COMPONENTS:
 
 
 TODO: 
-- render sample data inside each component
+- finish rendering sample data inside each component (use circle class for messagelistitems)
