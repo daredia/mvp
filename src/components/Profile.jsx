@@ -1,6 +1,6 @@
-var Profile = () => (
+var Profile = ({profile}) => (
   <div>
-    <h3>This is Profile.jsx</h3>
+    <img className="responsive-img" src={`${profile.image}`}/>
   </div>
 );
 

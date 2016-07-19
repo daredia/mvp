@@ -1,11 +1,10 @@
 var App = () => (
-  <div>
-    <h1>This is App.jsx</h1>
-    <div>
-      <Profile />
+  <div className="row">
+    <div className="col s5">
+      <Profile profile={exampleProfileData[0]}/>
     </div>
-    <div>
-      <MessageList />
+    <div className="col s7">
+      <MessageList messages={exampleMessageData}/>
     </div>
   </div>
 );
