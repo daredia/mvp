@@ -4,3 +4,8 @@ COMPONENTS:
   - Profile
   - MessageList
     - MessageListItem
+
+
+TODO: 
+- set up index.js
+- include rest of scripts in index.html
