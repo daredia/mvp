@@ -1,9 +1,9 @@
 var App = () => (
-  <div className="row">
-    <div className="col s5">
+  <div className="row center-lg">
+    <div className="col-lg-5">
       <Profile profile={exampleProfileData[0]}/>
     </div>
-    <div className="col s7">
+    <div className="col-lg-7">
       <MessageList messages={exampleMessageData}/>
     </div>
   </div>
