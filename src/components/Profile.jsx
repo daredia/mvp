@@ -9,6 +9,7 @@
 //   </div>
 // );
 
+import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
@@ -41,8 +42,4 @@ var Profile = ({profile}) => (
 
 
 
-
-
-
-// TODO: refactor later to use webpack
-window.Profile = Profile;
+export default Profile;

@@ -1,4 +1,4 @@
-window.exampleProfileData = [{ // array of profile objects
+var exampleProfileData = [{ // array of profile objects
   image: 'http://factmag-images.s3.amazonaws.com/wp-content/uploads/2013/12/beyonce-121313.jpg',
   name: 'Beyonce',
   age: 29,
@@ -31,3 +31,5 @@ window.exampleMessageData = [{ // array of message objects
   messages: ['I made that bitch famous'],
   new: false
 }]; 
+
+export default exampleProfileData;

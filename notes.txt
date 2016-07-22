@@ -7,5 +7,11 @@ COMPONENTS:
 
 
 TODO: 
+- remove compiled folder
+- use watchify so i dont have to keep entering browserify command
+- add browserify command to npm start
 - finish rendering sample data inside each component (use circle class for messagelistitems)
 - switch to https://github.com/callemall/material-ui
+
+browserify -t [ babelify --presets [ es2015 react ] ] src/index.js -o build/app.js
+
