@@ -8,3 +8,4 @@ COMPONENTS:
 
 TODO: 
 - finish rendering sample data inside each component (use circle class for messagelistitems)
+- switch to https://github.com/callemall/material-ui
