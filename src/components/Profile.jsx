@@ -15,6 +15,20 @@ var Profile = ({profile}) => (
           src={`${profile.image}`}
         />
       }
+      children={
+        <CardActions className="profileActions">
+          <RaisedButton 
+            label="no" 
+            secondary={true} 
+            icon={<FontIcon className="material-icons">not_interested</FontIcon>} 
+          />
+          <RaisedButton 
+            label="yes" 
+            primary={true} 
+            icon={<FontIcon className="material-icons">done</FontIcon>} 
+          />
+        </CardActions>
+      }
     />
     <CardMedia
       overlay={<CardTitle title={`"${profile.bio.quote}"`} subtitle="" />}
@@ -26,18 +40,7 @@ var Profile = ({profile}) => (
       <p>Hometown: {profile.bio.hometown}<br/>Occupation: {profile.bio.occupation}</p>
       <p>{profile.bio.text}</p>
     </CardText>
-    <CardActions>
-      <RaisedButton 
-        label="no" 
-        secondary={true} 
-        icon={<FontIcon className="material-icons">not_interested</FontIcon>} 
-      />
-      <RaisedButton 
-        label="yes" 
-        primary={true} 
-        icon={<FontIcon className="material-icons">done</FontIcon>} 
-      />
-    </CardActions>
+    
   </Card>
 );
 
