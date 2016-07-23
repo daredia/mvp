@@ -4,7 +4,7 @@
   "description": "Because every dating app should look like Tinder",
   "main": "index.js",
   "scripts": {
-    "start": "babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch & live-server",
+    "start": "watchify -t [ babelify --presets [ es2015 react ] ] src/index.js -o build/app.js & live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +25,8 @@
     "material-ui": "^0.15.2",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "react-tap-event-plugin": "^1.0.0"
+    "react-tap-event-plugin": "^1.0.0",
+    "watchify": "^3.7.0"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1"
