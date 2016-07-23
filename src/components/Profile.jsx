@@ -1,24 +1,14 @@
-// var Profile = ({profile}) => (
-//   <div>
-//     <img className="responsive-img" src={`${profile.image}`}/>
-//     <span className="left">{profile.name}, {profile.age}</span>
-//     <span className="right">{profile.distance} miles away</span>
-//     <hr className="separator"/>
-//     <a className="left waves-effect waves-light btn-large red"><i className="material-icons left">not_interested</i>no</a>
-//     <a className="right waves-effect waves-light btn-large"><i className="material-icons left">done</i>yes</a>
-//   </div>
-// );
-
 import React from 'react';
 import Avatar from 'material-ui/Avatar';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+import FontIcon from 'material-ui/FontIcon';
 
 var Profile = ({profile}) => (
   <Card>
     <CardHeader
-      title="URL Avatar"
-      subtitle="Subtitle"
+      title={`${profile.name}, ${profile.age}`}
+      subtitle={`Seen ${profile.seen} | ${profile.distance} miles away`}
       avatar={
         <Avatar
           className="avatar"
@@ -27,25 +17,28 @@ var Profile = ({profile}) => (
       }
     />
     <CardMedia
-      overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+      overlay={<CardTitle title={`"${profile.bio.quote}"`} subtitle="" />}
     >
       <img src={`${profile.image}`} />
     </CardMedia>
-    <CardTitle title="Card title" subtitle="Card subtitle" />
+    {/*<CardTitle title="Card title" subtitle="Card subtitle" />*/}
     <CardText>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-      Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-      Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+      <p>Hometown: {profile.bio.hometown}<br/>Occupation: {profile.bio.occupation}</p>
+      <p>{profile.bio.text}</p>
     </CardText>
     <CardActions>
-      <FlatButton label="Action1" />
-      <FlatButton label="Action2" />
+      <RaisedButton 
+        label="no" 
+        secondary={true} 
+        icon={<FontIcon className="material-icons">not_interested</FontIcon>} 
+      />
+      <RaisedButton 
+        label="yes" 
+        primary={true} 
+        icon={<FontIcon className="material-icons">done</FontIcon>} 
+      />
     </CardActions>
   </Card>
 );
-
-
-
 
 export default Profile;

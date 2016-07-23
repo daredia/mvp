@@ -3,9 +3,11 @@ var exampleProfileData = [{ // array of profile objects
   name: 'Beyonce',
   age: 29,
   distance: 10,
+  seen: '9 hours ago',
   bio: {
     hometown: 'Houston, TX',
     occupation: 'Musician',
+    quote: 'My body too bootylicious for ya babe',
     text: 'I am fierce, and I dont think you ready for this jelly'
   }
 }]; 
