@@ -7,5 +7,6 @@ COMPONENTS:
 
 
 TODO: 
+- figure out a way for live-server to wait for watchify step to be done before reloading the page
 - finish rendering sample data inside each component (use circle class for messagelistitems)
 - switch to https://github.com/callemall/material-ui
