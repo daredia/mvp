@@ -10,3 +10,5 @@ TODO:
 - figure out a way for live-server to wait for watchify step to be done before reloading the page
 - finish rendering sample data inside each component
 - insert format_quote material ui icon into quote
+- when ready to add state, see next step at https://facebook.github.io/react/docs/thinking-in-react.html
+- show more than most recent message in message preview snippet
