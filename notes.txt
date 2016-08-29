@@ -12,3 +12,4 @@ TODO:
 - insert format_quote material ui icon into quote
 - when ready to add state, see next step at https://facebook.github.io/react/docs/thinking-in-react.html
 - show more than most recent message in message preview snippet
+- add react router and redux
